@@ -197,26 +197,42 @@
   function handleScrollPinning() {
     if (config.reducedMotion) return;
 
-    scrollSections.forEach((section, index) => {
+    scrollSections.forEach((section) => {
       const rect = section.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      const scrollProgress = getScrollProgress(section);
+      const sectionTop = rect.top + window.scrollY;
+      const sectionHeight = rect.height;
+      const currentScroll = window.scrollY;
 
-      // Pin section when it enters viewport
-      if (rect.top <= 0 && rect.bottom >= windowHeight) {
+      // Calculate when section should be pinned
+      // Pin when section enters viewport from top
+      if (rect.top <= 0 && rect.bottom > windowHeight) {
+        // Section is pinned - apply sticky positioning
         section.style.position = "sticky";
         section.style.top = "0";
-      } else {
-        section.style.position = "relative";
-      }
 
-      // Apply parallax or transform effects based on scroll progress
-      // This creates the smooth transition effect between sections
-      const innerContent = section.querySelector(".scroll-section-inner");
-      if (innerContent) {
-        // Subtle parallax effect
-        const parallaxOffset = scrollProgress * 50;
-        innerContent.style.transform = `translateY(${parallaxOffset}px)`;
+        // Calculate scroll progress within pinned section
+        const scrollRange = sectionHeight - windowHeight;
+        const scrolledInSection = currentScroll - (sectionTop - windowHeight);
+        const progress = Math.max(
+          0,
+          Math.min(1, scrolledInSection / scrollRange)
+        );
+
+        // Apply subtle parallax/transform effects based on scroll progress
+        const innerContent = section.querySelector(".scroll-section-inner");
+        if (innerContent && scrollRange > 0) {
+          // Subtle parallax effect - elements move slightly as you scroll
+          const parallaxOffset = progress * 30;
+          innerContent.style.transform = `translateY(${parallaxOffset}px)`;
+        }
+      } else {
+        // Section is not pinned - use relative positioning
+        section.style.position = "relative";
+        const innerContent = section.querySelector(".scroll-section-inner");
+        if (innerContent) {
+          innerContent.style.transform = "";
+        }
       }
     });
   }
@@ -244,27 +260,20 @@
   // ===== SMOOTH SCROLL ENHANCEMENT =====
 
   /**
-   * Enhance smooth scrolling behavior
-   * Applies momentum-based smoothing to scroll
+   * Smooth scroll to target position
+   * Uses native smooth scroll with fallback for better browser support
    */
-  let smoothScrollTarget = 0;
-  let currentScroll = 0;
-
-  function smoothScroll() {
-    if (config.reducedMotion) return;
-
-    currentScroll = lerp(
-      currentScroll,
-      smoothScrollTarget,
-      config.scrollSmoothness
-    );
-
-    if (Math.abs(currentScroll - smoothScrollTarget) > 0.5) {
-      window.scrollTo(0, currentScroll);
-      requestAnimationFrame(smoothScroll);
-    } else {
-      window.scrollTo(0, smoothScrollTarget);
+  function smoothScrollTo(targetY) {
+    if (config.reducedMotion) {
+      window.scrollTo(0, targetY);
+      return;
     }
+
+    // Use native smooth scroll behavior (already enabled in CSS)
+    window.scrollTo({
+      top: targetY,
+      behavior: "smooth",
+    });
   }
 
   // ===== MAIN SCROLL HANDLER =====
@@ -348,16 +357,7 @@
           const navHeight = nav ? nav.offsetHeight : 0;
           const targetPosition = target.offsetTop - navHeight;
 
-          if (config.reducedMotion) {
-            window.scrollTo({
-              top: targetPosition,
-              behavior: "auto",
-            });
-          } else {
-            smoothScrollTarget = targetPosition;
-            currentScroll = window.scrollY;
-            smoothScroll();
-          }
+          smoothScrollTo(targetPosition);
         }
       });
     });

@@ -393,6 +393,7 @@ body {
   justify-content: center;
   padding: var(--spacing-xl) var(--spacing-md);
   overflow: hidden;
+  will-change: transform;
 }
 
 .scroll-section-inner {
@@ -402,6 +403,8 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xl);
   align-items: center;
+  will-change: transform;
+  transition: transform 0.1s ease-out;
 }
 
 .scroll-pin-1,
