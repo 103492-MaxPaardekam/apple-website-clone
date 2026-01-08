@@ -40,14 +40,10 @@ No frameworks, build tools, or dependencies.
 
 ## Project Structure
 
-.
-├── index.html
-├── styles.css
-├── script.js
+├── index.html # Main markup
+├── styles.css # Layout, typography, animations
+├── script.js # Scroll logic & interactions
 └── README.md
-
-yaml
-Copy code
 
 ---
 
