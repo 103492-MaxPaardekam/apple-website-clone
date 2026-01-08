@@ -40,9 +40,11 @@ No frameworks, build tools, or dependencies.
 
 ## Project Structure
 
-├── index.html # Main markup
-├── styles.css # Layout, typography, animations
-├── script.js # Scroll logic & interactions
+```text
+/
+├── index.html     # Main markup
+├── styles.css     # Layout, typography, animations
+├── script.js      # Scroll logic & interactions
 └── README.md
 
 ---
@@ -83,7 +85,7 @@ No build step required.
 
 ## License
 
-Educational use only.  
+Educational use only.
 Do not use this project to misrepresent brand affiliation or for commercial purposes.
 
 ---
@@ -91,3 +93,4 @@ Do not use this project to misrepresent brand affiliation or for commercial purp
 ## Notes
 
 This project prioritizes **structure and interaction fidelity** over visual branding accuracy.
+```
