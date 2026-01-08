@@ -1,126 +1,97 @@
-# Apple-Style Smartphone Product Page (Educational Clone)
+# Apple-Style Product Page Clone (Educational)
 
-This project is a **high-fidelity, educational clone** of an Apple-style iPhone product page, focused on replicating **layout, interaction patterns, scroll animations, and visual rhythm** — **not branding or proprietary content**.
+Educational project that replicates the **layout, scrolling behavior, and interaction patterns** of a modern Apple-style iPhone product page using **vanilla HTML, CSS, and JavaScript**.
 
-All product names, copy, and visuals are fictional placeholders.
-
----
-
-## 📌 Purpose
-
-The goal of this project is to:
-
-- Study and replicate **best-in-class product marketing UX**
-- Practice **scroll-driven animations and transitions**
-- Explore **modern CSS layout techniques**
-- Demonstrate **frontend polish at a premium brand level**
-
-This project is intended **strictly for learning, experimentation, and portfolio use**.
+All content is fictional and uses placeholders. This project focuses on **UI structure and motion**, not branding.
 
 ---
 
-## 🚫 Disclaimer
+## Overview
 
-This project:
+This repository contains a frontend exercise aimed at studying:
 
-- Is **not affiliated with Apple Inc.**
-- Does **not** use Apple trademarks, logos, product names, or copyrighted assets
-- Does **not** attempt to pass as an official Apple website
+- High-end product marketing layouts
+- Scroll-driven storytelling
+- Motion design patterns
+- Modern CSS layout techniques
 
-All references to products, imagery, and copy are **generic or fictional**.
-
----
-
-## 🛠 Tech Stack
-
-- **HTML5** (semantic markup)
-- **CSS3**
-  - Flexbox
-  - Grid
-  - `clamp()` for responsive typography
-  - Sticky positioning & scroll-based layout techniques
-- **JavaScript (Vanilla)**
-  - Scroll-based animations
-  - Intersection Observer
-  - Optional GSAP for advanced motion
-- **Fonts**
-  - Inter (open-source alternative to SF Pro)
-
-No frontend frameworks are used to keep the implementation transparent and instructional.
+It is intended for **learning and portfolio demonstration only**.
 
 ---
 
-## ✨ Features
+## Legal Disclaimer
 
-- Sticky global navigation with scroll-based transformation
-- Large hero section with entrance animations
-- Scroll-driven, pinned product sections
-- Smooth text fade-in / fade-out synced to scroll position
-- Asymmetric feature layouts with generous whitespace
-- Full-width dark sections for contrast and emphasis
-- Subtle micro-interactions (hover, easing, transitions)
-- Fully responsive (mobile-first)
-- Accessibility-conscious design:
-  - Semantic HTML
-  - Reduced-motion support
-  - Readable contrast ratios
-- Performance-focused animation techniques
+- Not affiliated with Apple Inc.
+- No Apple trademarks, product names, logos, or proprietary assets are used
+- All copy, images, and product references are fictional
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
 
-```text
-/
-├── index.html     # Main markup
-├── styles.css     # Layout, typography, animations
-├── script.js      # Scroll logic & interactions
+- HTML5
+- CSS3 (Flexbox, Grid, modern responsive units)
+- Vanilla JavaScript (scroll & interaction logic)
+- Optional: GSAP (if added later)
+
+No frameworks, build tools, or dependencies.
+
+---
+
+## Project Structure
+
+.
+├── index.html
+├── styles.css
+├── script.js
 └── README.md
-🚀 Getting Started
-Clone or download the repository
 
-Open index.html in a modern browser
+yaml
+Copy code
 
-Scroll through the page to experience the interactions
+---
 
-No build step or dependencies required.
+## Running Locally
 
-## ♿ Accessibility Notes
-Honors prefers-reduced-motion
+Open `index.html` directly in a modern browser.
 
-Uses semantic elements wherever possible
+No build step required.
 
-Remains readable and usable with animations disabled
+---
 
-## 📈 Possible Extensions
-Convert to React or Next.js
+## Accessibility
 
-Add Three.js product renders
+- Semantic HTML
+- Supports `prefers-reduced-motion`
+- Designed to remain usable with animations disabled
 
-Replace placeholder imagery with custom 3D assets
+---
 
-Implement CMS-driven content
+## Goals
 
-Add page transition animations
+- Replicate Apple-style layout and pacing
+- Implement scroll-based animations responsibly
+- Maintain performance and readability
+- Keep the codebase simple and inspectable
 
-## 🧠 Learning Focus
-This project emphasizes:
+---
 
-Scroll-based storytelling
+## Non-Goals
 
-Motion design restraint
+- Branding replication
+- Commercial use
+- Production deployment
+- Asset or copy accuracy
 
-Visual hierarchy
+---
 
-Premium UI pacing
+## License
 
-Performance-aware animation
+Educational use only.  
+Do not use this project to misrepresent brand affiliation or for commercial purposes.
 
-## 📜 License
-This project is provided for educational use only.
+---
 
-You may modify and reuse the code for learning or portfolio projects, but do not use it commercially or to misrepresent brand affiliation.
+## Notes
 
-## 👤 Author
-Built as a frontend UX engineering exercise inspired by modern product marketing pages.
-```
+This project prioritizes **structure and interaction fidelity** over visual branding accuracy.
