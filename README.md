@@ -46,6 +46,7 @@ No frameworks, build tools, or dependencies.
 ├── styles.css     # Layout, typography, animations
 ├── script.js      # Scroll logic & interactions
 └── README.md
+```
 
 ---
 
@@ -93,4 +94,7 @@ Do not use this project to misrepresent brand affiliation or for commercial purp
 ## Notes
 
 This project prioritizes **structure and interaction fidelity** over visual branding accuracy.
+
+```
+
 ```
