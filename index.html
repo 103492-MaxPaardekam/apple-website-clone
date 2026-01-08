@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium smartphone product page - Educational clone"
+    />
+    <title>Smartphone X Pro | Premium Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sticky Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <svg
+            width="20"
+            height="24"
+            viewBox="0 0 20 24"
+            fill="none"
+            aria-label="Brand logo"
+          >
+            <rect
+              x="6"
+              y="2"
+              width="8"
+              height="20"
+              rx="2"
+              fill="currentColor"
+            />
+            <rect
+              x="8"
+              y="4"
+              width="4"
+              height="3"
+              rx="1"
+              fill="currentColor"
+              opacity="0.3"
+            />
+          </svg>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#specs" class="nav-link">Tech Specs</a></li>
+          <li><a href="#buy" class="nav-link">Order</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="overview" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 class="hero-headline" id="hero-heading">
+          <span class="hero-headline-main">Smartphone X Pro</span>
+          <span class="hero-headline-sub">A leap ahead.</span>
+        </h1>
+        <div class="hero-product">
+          <div class="product-render" aria-hidden="true">
+            <div class="product-frame">
+              <div class="product-screen">
+                <div class="screen-content"></div>
+              </div>
+              <div class="product-camera"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#buy" class="btn btn-primary">Learn more</a>
+          <a href="#buy" class="btn btn-secondary">Buy</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M12 5v14M5 12l7-7 7 7"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Scroll-Pinned Feature Section 1 -->
+    <section class="scroll-section scroll-pin-1" data-pin="true">
+      <div class="scroll-section-inner">
+        <div class="feature-text feature-text-1" data-fade="true">
+          <h2 class="feature-title">All-new design</h2>
+          <p class="feature-description">
+            Crafted from titanium with precision engineering. Lighter, stronger,
+            more elegant.
+          </p>
+        </div>
+        <div class="product-showcase product-showcase-1" data-transform="true">
+          <div class="product-render-large">
+            <div class="product-frame-large">
+              <div class="product-screen-large">
+                <div class="screen-content screen-content-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll-Pinned Feature Section 2 -->
+    <section class="scroll-section scroll-pin-2" data-pin="true">
+      <div class="scroll-section-inner">
+        <div class="feature-text feature-text-2" data-fade="true">
+          <h2 class="feature-title">Advanced display</h2>
+          <p class="feature-description">
+            Brilliant OLED panel with adaptive refresh rate. Every detail,
+            perfected.
+          </p>
+        </div>
+        <div class="product-showcase product-showcase-2" data-transform="true">
+          <div class="product-render-large">
+            <div class="product-frame-large">
+              <div class="product-screen-large">
+                <div class="screen-content screen-content-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Highlight Section -->
+    <section
+      class="feature-section"
+      id="features"
+      aria-labelledby="features-heading"
+    >
+      <div class="feature-section-content">
+        <h2 class="section-heading" id="features-heading">
+          Designed for performance
+        </h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="8"
+                  y="8"
+                  width="32"
+                  height="32"
+                  rx="4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="8"
+                  fill="currentColor"
+                  opacity="0.2"
+                />
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Pro Processor</h3>
+            <p class="feature-card-text">
+              Next-generation chip delivering unprecedented speed and
+              efficiency.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M24 8v32M8 24h32"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  opacity="0.3"
+                />
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Advanced Camera</h3>
+            <p class="feature-card-text">
+              Triple-lens system with computational photography that captures
+              every moment perfectly.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="12"
+                  y="12"
+                  width="24"
+                  height="32"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <rect
+                  x="18"
+                  y="18"
+                  width="12"
+                  height="8"
+                  rx="1"
+                  fill="currentColor"
+                  opacity="0.3"
+                />
+              </svg>
+            </div>
+            <h3 class="feature-card-title">All-day battery</h3>
+            <p class="feature-card-text">
+              Intelligent power management keeps you going from dawn to dusk and
+              beyond.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dark Contrast Section -->
+    <section class="dark-section">
+      <div class="dark-section-content">
+        <h2 class="dark-section-title">Incredible photography</h2>
+        <p class="dark-section-description">
+          Capture stunning photos and videos with professional-grade tools built
+          right in.
+        </p>
+        <div class="dark-section-visual">
+          <div class="visual-grid">
+            <div class="visual-item visual-item-1"></div>
+            <div class="visual-item visual-item-2"></div>
+            <div class="visual-item visual-item-3"></div>
+            <div class="visual-item visual-item-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Asymmetric Feature Section -->
+    <section class="asymmetric-section">
+      <div class="asymmetric-content">
+        <div class="asymmetric-text">
+          <h2 class="asymmetric-title">Experience the difference</h2>
+          <p class="asymmetric-description">
+            Every interaction feels natural. Every detail, intentional. This is
+            design that thinks ahead.
+          </p>
+          <a href="#buy" class="btn btn-primary">Explore features</a>
+        </div>
+        <div class="asymmetric-visual">
+          <div class="product-render-asymmetric">
+            <div class="product-frame-asymmetric">
+              <div class="product-screen-asymmetric">
+                <div class="screen-content screen-content-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Specs Section -->
+    <section class="specs-section" id="specs" aria-labelledby="specs-heading">
+      <div class="specs-content">
+        <h2 class="section-heading" id="specs-heading">
+          Technical specifications
+        </h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <dt class="spec-term">Display</dt>
+            <dd class="spec-detail">
+              6.7" Super Retina OLED<br />120Hz Adaptive Refresh
+            </dd>
+          </div>
+          <div class="spec-item">
+            <dt class="spec-term">Processor</dt>
+            <dd class="spec-detail">
+              A17 Pro Chip<br />6-core CPU, 6-core GPU
+            </dd>
+          </div>
+          <div class="spec-item">
+            <dt class="spec-term">Camera</dt>
+            <dd class="spec-detail">
+              48MP Main<br />12MP Ultra Wide<br />12MP Telephoto
+            </dd>
+          </div>
+          <div class="spec-item">
+            <dt class="spec-term">Battery</dt>
+            <dd class="spec-detail">Up to 29 hours<br />video playback</dd>
+          </div>
+          <div class="spec-item">
+            <dt class="spec-term">Storage</dt>
+            <dd class="spec-detail">128GB, 256GB<br />512GB, 1TB</dd>
+          </div>
+          <div class="spec-item">
+            <dt class="spec-term">Materials</dt>
+            <dd class="spec-detail">
+              Titanium frame<br />Ceramic shield front
+            </dd>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section" id="buy" aria-labelledby="buy-heading">
+      <div class="cta-content">
+        <h2 class="cta-title" id="buy-heading">Ready to experience it?</h2>
+        <p class="cta-description">
+          Order now and have it delivered to your door.
+        </p>
+        <div class="cta-buttons">
+          <a href="#buy" class="btn btn-primary btn-large">Order now</a>
+          <a href="#specs" class="btn btn-secondary btn-large">View specs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-content">
+        <p class="footer-text">
+          This is an educational project. Not affiliated with any company.
+        </p>
+        <p class="footer-copyright">&copy; 2024 Educational Clone</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
